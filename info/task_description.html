@@ -1,16 +1,12 @@
 <!-- Describe task in general -->
 
 <p>
-    Sum two passed ints
-</p>
-
-<p style="text-align: center;">
-    <img  title="example" src="{{MEDIA}}example.png" alt="example" style="max-height: 83px"/>
+    Python has a builtin function sum. You need to do a similar function that instead of summing do multiplying.    
 </p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Input: </strong> Two arguments. Both are ints.
+    <strong>Input: </strong> Two arguments. List of integers and initial value as integer (default 1).
 </p>
 
 <p>
@@ -25,12 +21,14 @@
     </p>
 
 {% if interpreter.slug == "js-node" %}
-<pre class="brush: javascript">sumTwo(2, 3) == 5
-sumTwo(5, 7) == 12
+<pre class="brush: javascript">mult([1, 2, 3]) == 6
+mult([1]) == 1
+mult([10, 10, 10]) == 1000
 </pre>
 {% else %}
-<pre class="brush: python">sum_two(2, 3) == 5
-sum_two(5, 7) == 12
+<pre class="brush: python">mult([1, 2, 3]) == 6
+mult([1]) == 1
+mult([10, 10, 10]) == 1000
 </pre>
 {% endif %}
 </div>

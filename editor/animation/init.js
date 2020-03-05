@@ -8,8 +8,8 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             multipleArguments: true,
             functions: {
-                python: 'sum_two',
-                js: 'sumTwo'
+                python: 'mult',
+                js: 'mult'
             }
         });
         io.start();
